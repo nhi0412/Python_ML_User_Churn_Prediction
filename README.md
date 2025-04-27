@@ -56,19 +56,19 @@ In today's competitive business landscape, retaining customers is crucial for lo
 
 ![Image](https://github.com/user-attachments/assets/8a6e8683-77d2-4cd4-9d98-a8d98bfdfcfd)
 
-![Screenshot 2025-04-27 at 5.37.29 pm.png](attachment:79d067e3-4279-42a0-b879-79916e01dbf3:Screenshot_2025-04-27_at_5.37.29_pm.png)
+![Image](https://github.com/user-attachments/assets/0b7bd5bc-a16d-4c1f-9cd3-a97fab5ee2e4)
 
 ## **Missing values**
 
-![Screenshot 2025-04-27 at 5.39.05 pm.png](attachment:00f524a0-9ca4-4de0-9be7-777552566086:6d217b6d-6426-4651-a266-1867ab101b0f.png)
+![Image](https://github.com/user-attachments/assets/4ced4327-d674-4010-a227-adb600dbf3c7)
 
-![Screenshot 2025-04-27 at 5.40.00 pm.png](attachment:572e41bd-a5d3-4cbc-bd59-871719b4c85d:Screenshot_2025-04-27_at_5.40.00_pm.png)
+![Image](https://github.com/user-attachments/assets/20d291df-845c-4a3b-9ae0-238a4cf907b7)
 
 We impute the missing values using the median, as all columns are numeric and the median is less sensitive to outliers compared to the mean.
 
 ## **Duplicate values**
 
-![Screenshot 2025-04-27 at 5.44.04 pm.png](attachment:229e057c-603f-40c0-9292-2f6be2a1b488:Screenshot_2025-04-27_at_5.44.04_pm.png)
+![Image](https://github.com/user-attachments/assets/0c0c1b12-7532-497a-8417-da57f9bb9d06)
 
 There’s no duplicate value in the dataset.
 
@@ -76,7 +76,7 @@ There’s no duplicate value in the dataset.
 
 ### **Numerical Columns**
 
-![Screenshot 2025-04-27 at 5.48.21 pm.png](attachment:d5e9498e-8b54-4cdf-907b-abf2ed18ac6f:Screenshot_2025-04-27_at_5.48.21_pm.png)
+![Image](https://github.com/user-attachments/assets/e383e71c-766d-40dd-a1b6-447d0d455e1a)
 
 Factors that affect Churn:
 
@@ -96,13 +96,13 @@ Other notable correlations:
 
 **OrderCount/CouponUsed and CashbackAmount:** Fairly strong correlation (0.32 and 0.22) => More orders/coupons lead to a higher total cashback received.
 
-![Screenshot 2025-04-27 at 5.49.36 pm.png](attachment:3230ef05-1cc4-4bd4-a454-45e3540943a8:Screenshot_2025-04-27_at_5.49.36_pm.png)
+![Image](https://github.com/user-attachments/assets/7f97ff43-dec1-41bd-9e54-5747b898fc8f)
 
-![Screenshot 2025-04-27 at 5.51.07 pm.png](attachment:a2394dd7-689e-45f0-a5c2-7b0f5cb06b19:Screenshot_2025-04-27_at_5.51.07_pm.png)
+![Image](https://github.com/user-attachments/assets/7c0cecb2-5d17-48a4-abf9-eb32a703ba28)
 
 ### **Categorical Columns**
 
-![Screenshot 2025-04-27 at 5.53.21 pm.png](attachment:dc473820-27d9-4f9b-af95-738179fc1409:Screenshot_2025-04-27_at_5.53.21_pm.png)
+![Image](https://github.com/user-attachments/assets/7c0cecb2-5d17-48a4-abf9-eb32a703ba28)
 
 # 4. **Model for predicting churned users**
 
