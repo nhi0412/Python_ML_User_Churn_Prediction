@@ -62,13 +62,13 @@ In today's competitive business landscape, retaining customers is crucial for lo
 
 ![Image](https://github.com/user-attachments/assets/4ced4327-d674-4010-a227-adb600dbf3c7)
 
-![Image](https://github.com/user-attachments/assets/20d291df-845c-4a3b-9ae0-238a4cf907b7)
+![Image](https://github.com/user-attachments/assets/834d1da0-f0d9-4a4a-b05d-58e8ace5a62b)
 
 We impute the missing values using the median, as all columns are numeric and the median is less sensitive to outliers compared to the mean.
 
 ## **Duplicate values**
 
-![Image](https://github.com/user-attachments/assets/0c0c1b12-7532-497a-8417-da57f9bb9d06)
+![Image](https://github.com/user-attachments/assets/20d291df-845c-4a3b-9ae0-238a4cf907b7)
 
 There’s no duplicate value in the dataset.
 
@@ -76,7 +76,7 @@ There’s no duplicate value in the dataset.
 
 ### **Numerical Columns**
 
-![Image](https://github.com/user-attachments/assets/e383e71c-766d-40dd-a1b6-447d0d455e1a)
+![Image](https://github.com/user-attachments/assets/0c0c1b12-7532-497a-8417-da57f9bb9d06)
 
 Factors that affect Churn:
 
@@ -96,9 +96,8 @@ Other notable correlations:
 
 **OrderCount/CouponUsed and CashbackAmount:** Fairly strong correlation (0.32 and 0.22) => More orders/coupons lead to a higher total cashback received.
 
+![Image](https://github.com/user-attachments/assets/e383e71c-766d-40dd-a1b6-447d0d455e1a)
 ![Image](https://github.com/user-attachments/assets/7f97ff43-dec1-41bd-9e54-5747b898fc8f)
-
-![Image](https://github.com/user-attachments/assets/7c0cecb2-5d17-48a4-abf9-eb32a703ba28)
 
 ### **Categorical Columns**
 
