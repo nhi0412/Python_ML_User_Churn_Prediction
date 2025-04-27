@@ -109,31 +109,31 @@ Other notable correlations:
 
 Use **One-hot encoding** to transform categorical features into binary features. Since each column has only a few unique categorical values, one-hot encoding is effective
 
-![Screenshot 2025-04-27 at 5.58.07 pm.png](attachment:9944693d-658e-451d-a0a1-db0d12daba42:Screenshot_2025-04-27_at_5.58.07_pm.png)
+![Image](https://github.com/user-attachments/assets/8547ca80-0cb8-4eaa-8438-8e2ae4cf946d)
 
 ## **Apply model**
 
 ### **Split/Train/Validate/Test set**
 
-![Screenshot 2025-04-27 at 6.00.51 pm.png](attachment:6da0cc32-b567-4018-acb9-ad848e576f8e:Screenshot_2025-04-27_at_6.00.51_pm.png)
+![Image](https://github.com/user-attachments/assets/4311a533-80ae-4fbc-876a-3ec58b561f67)
 
 ### **Apply Model**
 
 Random Forest was used to build the churn prediction model because it is highly effective for binary classification problems and handles complex, non-linear relationships well. It also provides feature importance rankings, offering valuable insights into which factors contribute most to customer churn.
 
-![Screenshot 2025-04-27 at 6.01.41 pm.png](attachment:cdb5cfc9-74a6-4ef5-9ab6-ffb953b2e697:9e5fe996-51d2-47fa-8bf2-61aa4a0f0891.png)
+![Image](https://github.com/user-attachments/assets/516911e3-f869-4508-b581-73781ae11e11)
 
 - The training accuracy is 100% => model fits perfectly on the training data.
 - The testing accuracy is high (94.14%)=> model generalizes well to unseen data.
 - There is no severe overfitting as the gap between training and testing accuracy is not too large.
 
-![Screenshot 2025-04-27 at 6.02.22 pm.png](attachment:fd86f046-a5bf-4dc7-a108-c9dd87ab0cc5:Screenshot_2025-04-27_at_6.02.22_pm.png)
+![Image](https://github.com/user-attachments/assets/56b37c49-30ce-4592-bc19-6d677ec378f2)
 
 - The balanced accuracy on the test set is 85.68% => model performs well even if the classes are imbalanced
 
 ### **Feature Important**
 
-![Screenshot 2025-04-27 at 6.04.16 pm.png](attachment:e38bad8a-d132-4c3f-819a-cc1cee633024:Screenshot_2025-04-27_at_6.04.16_pm.png)
+![Image](https://github.com/user-attachments/assets/496beeaa-f9d0-471e-8020-af0c719b9340)
 
 Tenure is the strongest factor influencing churn (~0.20), followed by CashbackAmount and WarehouseToHome(likely related to delivery speed)
 
@@ -147,7 +147,7 @@ Tenure is the strongest factor influencing churn (~0.20), followed by CashbackAm
 
 **Tenure Aspect:**
 
-![Screenshot 2025-04-27 at 6.05.08 pm.png](attachment:ca255455-c6d9-4167-9b62-25bfc024ecf7:Screenshot_2025-04-27_at_6.05.08_pm.png)
+![Image](https://github.com/user-attachments/assets/2c33b0c5-5540-4efc-a56f-8a558208a2b1)
 
 - Nearly 350 churned users had a tenure of less than 2 months.
 - A small number of users churn even after 9 months, but this group is negligible compared to early churn.
@@ -160,7 +160,7 @@ Action Plan:
 
 **CashbackAmount Aspect:**
 
-![Screenshot 2025-04-27 at 6.06.34 pm.png](attachment:69b18e2e-f718-4f85-a0d3-66860d32df62:Screenshot_2025-04-27_at_6.06.34_pm.png)
+![Image](https://github.com/user-attachments/assets/f1e8bbfe-eb3c-4638-be30-6ec4e94b8768)
 
 - Majority of churned users had CashbackAmount between 120–200.
 - Higher cashback amounts (>250) are associated with lower churn.
@@ -173,7 +173,7 @@ Action Plan:
 
 **WarehouseToHome Aspect:**
 
-![Screenshot 2025-04-27 at 6.06.47 pm.png](attachment:ce9f5910-7831-4e2a-b58a-89fdaafba1fe:Screenshot_2025-04-27_at_6.06.47_pm.png)
+![Image](https://github.com/user-attachments/assets/1fbe23b8-f6c7-48ef-9940-76c59146e02a)
 
 - Common distance ranges from 5-16km (the highest point is 14km)
 - The range of distance for churned users is from 5-35km
@@ -187,7 +187,7 @@ Action Plan:
 
 **Complain Aspect:**
 
-![Screenshot 2025-04-27 at 6.06.58 pm.png](attachment:fdcd9053-4779-4130-b467-c8bee3bf70e9:Screenshot_2025-04-27_at_6.06.58_pm.png)
+![Image](https://github.com/user-attachments/assets/1f247b56-222d-40aa-b7b1-ad236893bca6)
 
 - Churn is higher among users who complained.
 - However, silent churn (no complaints) is also significant.
@@ -199,7 +199,7 @@ Action Plan:
 
 **DaySinceLastOrder Aspect:**
 
-![Screenshot 2025-04-27 at 6.07.15 pm.png](attachment:8f27c52d-5bb8-4432-9c89-cc47ab1a539f:Screenshot_2025-04-27_at_6.07.15_pm.png)
+![Image](https://github.com/user-attachments/assets/272cfe04-98b0-450d-a0c9-59eba955f8b5)
 
 - Recent buyers (within 10 days) still churn, suggesting post-purchase experience issues.
 - Lack of activity beyond 10 days is an early indicator of churn.
@@ -213,7 +213,7 @@ Action Plan:
 
 Hyperparameter Tuning
 
-![Screenshot 2025-04-27 at 6.09.08 pm.png](attachment:28d9cbd4-b73e-4969-a800-05b1c1f28136:3c1dfcf5-be96-4964-80b6-ef4056bc49bf.png)
+![Image](https://github.com/user-attachments/assets/91278b20-2f21-4911-8e08-98e3ffc0c00a)
 
 After hyperparameter tuning, the model was optimized with the following parameters: **{'bootstrap': False, 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}.**
 
@@ -226,7 +226,7 @@ Both the overall accuracy and the balanced accuracy are higher compared to the b
 
 # 4. **Model for predicting churned users**
 
-![Screenshot 2025-04-27 at 6.13.39 pm.png](attachment:36999b2a-d5cb-4e09-815d-766d2eaf365e:Screenshot_2025-04-27_at_6.13.39_pm.png)
+![Image](https://github.com/user-attachments/assets/d748b084-9539-476d-94e4-76469f31b5f6)
 
 Filter out one churned user.
 
@@ -234,13 +234,13 @@ Filter out one churned user.
 
 Use **One-hot encoding** to transform categorical features into binary features. Since each column has only a few unique categorical values, one-hot encoding is effective
 
-![Screenshot 2025-04-27 at 6.16.12 pm.png](attachment:6f6441af-bfb4-4b8a-a10e-7488f1c14a53:Screenshot_2025-04-27_at_6.16.12_pm.png)
+![Image](https://github.com/user-attachments/assets/25b54555-5530-4999-ae48-0a2595c10264)
 
 ## **Dimension Reduce**
 
-![Screenshot 2025-04-27 at 6.16.29 pm.png](attachment:442acbe4-ec89-4088-8632-ca37ff325b25:Screenshot_2025-04-27_at_6.16.29_pm.png)
+![Image](https://github.com/user-attachments/assets/85b9b0df-c701-4274-b312-f10488af818e)
 
-![Screenshot 2025-04-27 at 6.16.38 pm.png](attachment:97020198-9a31-4824-adef-a1db751ec86e:Screenshot_2025-04-27_at_6.16.38_pm.png)
+![Image](https://github.com/user-attachments/assets/273131c0-1b59-415c-87d7-e5072e4d9f46)
 
 Reduce Dimension to 3 columns:
 
@@ -250,7 +250,7 @@ Reduce Dimension to 3 columns:
 
 ## Find K value
 
-![Screenshot 2025-04-27 at 6.20.36 pm.png](attachment:0bc35bd4-38f5-4c85-b219-7d9f08481c06:Screenshot_2025-04-27_at_6.20.36_pm.png)
+![Image](https://github.com/user-attachments/assets/fabeadf5-3482-4669-ac1f-1eb5cd1a8364)
 
 ⇒ k=3
 
@@ -260,21 +260,21 @@ K-Means clustering was used because there were no group labels, making it an uns
 
 K-Means is an efficient and scalable algorithm that groups similar users based on their behavior, enabling the company to design targeted, personalized re-engagement strategies for each customer segment. This combination of predictive modeling and customer segmentation provides a comprehensive approach to reducing churn and improving customer retention.
 
-![Screenshot 2025-04-27 at 6.23.15 pm.png](attachment:9df639a4-00b2-40d0-9477-b4813603e6fe:Screenshot_2025-04-27_at_6.23.15_pm.png)
+![Image](https://github.com/user-attachments/assets/29ea7bfd-a70d-4755-adf5-773e76a7729a)
 
-![Screenshot 2025-04-27 at 6.22.46 pm.png](attachment:d35276a5-1f03-4a86-857e-be810d06664d:Screenshot_2025-04-27_at_6.22.46_pm.png)
+![Image](https://github.com/user-attachments/assets/42679357-5d5e-432e-b05e-33b7084f7af6)
 
 ## **Evaluate Model**
 
 ### **Silhouette Score**
 
-![Screenshot 2025-04-27 at 6.23.59 pm.png](attachment:2282f74e-83f6-4a82-8ccb-6448767f13b2:Screenshot_2025-04-27_at_6.23.59_pm.png)
+![Image](https://github.com/user-attachments/assets/9a6709b2-40cb-4e7a-b27a-ea12f36da2ac)
 
 The Silhouette Score of 0.5933 indicates that the clustering structure is fairly strong, with reasonably well-separated and cohesive clusters.
 
 ## **Feature Important**
 
-![Screenshot 2025-04-27 at 6.24.57 pm.png](attachment:02b97a09-ff72-49ae-a6de-f6611e28ef54:Screenshot_2025-04-27_at_6.24.57_pm.png)
+![Image](https://github.com/user-attachments/assets/edc540eb-9396-4e0d-9d37-dd120176e7a4)
 
 CouponUsed is the strongest factor influencing churn (~0.12), followed by Tenure, OrderCount and CashbackAmount
 
@@ -287,7 +287,7 @@ CouponUsed is the strongest factor influencing churn (~0.12), followed by Tenure
 
 **CouponUsed Aspect:**
 
-![Screenshot 2025-04-27 at 6.25.53 pm.png](attachment:78525220-18b4-46ba-a36a-a72ff76da86a:Screenshot_2025-04-27_at_6.25.53_pm.png)
+![Image](https://github.com/user-attachments/assets/306257cf-2d08-48ff-9a7a-a6af2847cb57)
 
 - Cluster 1: Median coupon usage is the lowest (near 0). Most customers rarely use discount coupons => customers less dependent on promotions.
 - Clusters 0 and 2: Higher median coupon usage. More outliers (some customers used more than 10 coupons) => more likely to use coupons
@@ -299,7 +299,7 @@ Action Plan:
 
 **Tenure Aspect:**
 
-![Screenshot 2025-04-27 at 6.26.35 pm.png](attachment:a91c4a34-3670-4192-a15d-fb86b1aacffa:Screenshot_2025-04-27_at_6.26.35_pm.png)
+![Image](https://github.com/user-attachments/assets/326abe9d-aac8-43d7-9df4-a2338bd38374)
 
 - Cluster 0: Low median (1–2 months). Mostly newer customers, a few longer-term outliers => new customers
 - Cluster 1: Widest range tenure (0–9 months), with many customers having stayed for 20 months => loyal customers with long engagement
@@ -312,7 +312,7 @@ Action Plan:
 
 **OrderCount Aspect:**
 
-![Screenshot 2025-04-27 at 6.26.50 pm.png](attachment:27d332ef-64e0-46e6-9de2-34d2e80c0836:Screenshot_2025-04-27_at_6.26.50_pm.png)
+![Image](https://github.com/user-attachments/assets/0ad3fae6-25e4-46b8-8a4e-06213cb983d0)
 
 - Cluster 1: Has the lowest median number of orders (~1 order). Narrow distribution, most customers placed only 1–2 orders => very few purchases
 - Clusters 0 and 2: Higher medians (2–3 orders). Wider spread for cluster 0, some customers placed up to 10–15 orders => more active, with more frequent orders
@@ -324,7 +324,7 @@ Action Plan:
 
 **CashbackAmount Aspect:**
 
-![Screenshot 2025-04-27 at 6.27.09 pm.png](attachment:9308cedc-cda6-4229-8227-7e81192b1577:Screenshot_2025-04-27_at_6.27.09_pm.png)
+![Image](https://github.com/user-attachments/assets/0ad3fae6-25e4-46b8-8a4e-06213cb983d0)
 
 - Cluster 1: Lower median cashback amount compared to other clusters. Cashback mostly stays around 120–150 units.
 - Clusters 0 and 2: Higher medians (~160–170 units). Wider distribution and more customers received higher cashback rewards (>250 units).
