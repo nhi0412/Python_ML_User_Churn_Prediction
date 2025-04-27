@@ -262,19 +262,19 @@ K-Means is an efficient and scalable algorithm that groups similar users based o
 
 ![Image](https://github.com/user-attachments/assets/29ea7bfd-a70d-4755-adf5-773e76a7729a)
 
-![Image](https://github.com/user-attachments/assets/42679357-5d5e-432e-b05e-33b7084f7af6)
+![Image](https://github.com/user-attachments/assets/c5cc428f-1f6e-4bdb-84a6-7285b405f155)
 
 ## **Evaluate Model**
 
 ### **Silhouette Score**
 
-![Image](https://github.com/user-attachments/assets/9a6709b2-40cb-4e7a-b27a-ea12f36da2ac)
+![Image](https://github.com/user-attachments/assets/42679357-5d5e-432e-b05e-33b7084f7af6)
 
 The Silhouette Score of 0.5933 indicates that the clustering structure is fairly strong, with reasonably well-separated and cohesive clusters.
 
 ## **Feature Important**
 
-![Image](https://github.com/user-attachments/assets/edc540eb-9396-4e0d-9d37-dd120176e7a4)
+![Image](https://github.com/user-attachments/assets/9a6709b2-40cb-4e7a-b27a-ea12f36da2ac)
 
 CouponUsed is the strongest factor influencing churn (~0.12), followed by Tenure, OrderCount and CashbackAmount
 
@@ -287,7 +287,7 @@ CouponUsed is the strongest factor influencing churn (~0.12), followed by Tenure
 
 **CouponUsed Aspect:**
 
-![Image](https://github.com/user-attachments/assets/306257cf-2d08-48ff-9a7a-a6af2847cb57)
+![Image](https://github.com/user-attachments/assets/edc540eb-9396-4e0d-9d37-dd120176e7a4)
 
 - Cluster 1: Median coupon usage is the lowest (near 0). Most customers rarely use discount coupons => customers less dependent on promotions.
 - Clusters 0 and 2: Higher median coupon usage. More outliers (some customers used more than 10 coupons) => more likely to use coupons
@@ -299,7 +299,7 @@ Action Plan:
 
 **Tenure Aspect:**
 
-![Image](https://github.com/user-attachments/assets/326abe9d-aac8-43d7-9df4-a2338bd38374)
+![Image](https://github.com/user-attachments/assets/306257cf-2d08-48ff-9a7a-a6af2847cb57)
 
 - Cluster 0: Low median (1–2 months). Mostly newer customers, a few longer-term outliers => new customers
 - Cluster 1: Widest range tenure (0–9 months), with many customers having stayed for 20 months => loyal customers with long engagement
@@ -312,7 +312,7 @@ Action Plan:
 
 **OrderCount Aspect:**
 
-![Image](https://github.com/user-attachments/assets/0ad3fae6-25e4-46b8-8a4e-06213cb983d0)
+![Image](https://github.com/user-attachments/assets/326abe9d-aac8-43d7-9df4-a2338bd38374)
 
 - Cluster 1: Has the lowest median number of orders (~1 order). Narrow distribution, most customers placed only 1–2 orders => very few purchases
 - Clusters 0 and 2: Higher medians (2–3 orders). Wider spread for cluster 0, some customers placed up to 10–15 orders => more active, with more frequent orders
