@@ -54,7 +54,7 @@ In today's competitive business landscape, retaining customers is crucial for lo
 
 ## Data Exploration
 
-![Screenshot 2025-04-27 at 5.37.22 pm.png](attachment:99619572-9eb2-42ec-a90d-7b2594ab824f:Screenshot_2025-04-27_at_5.37.22_pm.png)
+![Image](https://github.com/user-attachments/assets/8a6e8683-77d2-4cd4-9d98-a8d98bfdfcfd)
 
 ![Screenshot 2025-04-27 at 5.37.29 pm.png](attachment:79d067e3-4279-42a0-b879-79916e01dbf3:Screenshot_2025-04-27_at_5.37.29_pm.png)
 
